@@ -1,3 +1,13 @@
+@font-face {
+    font-family: griffon;
+    src: url(/fonts/Griffon-Regular.otf) format('truetype');
+  }
+
+@font-face {
+    font-family: merri;
+    src: url(/fonts/Merriweather-Regular.ttf) format('truetype');
+  }
+
 body {
     margin: 0;
     background-color: #dad9d9;
@@ -18,12 +28,60 @@ main {
 .card {
     margin: auto;
     background-color: #212121;
-    
-    height: 400px;
+    height: 600px;
     width: 100%;
     max-width: 350px;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px #000000;
+    color: #929292;
+    display: grid;
+    border-radius: 10px;
+    border: 3px solid #929292;
+    
+    box-sizing: border-box;
+    padding: 10px;
 }
+
+.card:hover {
+    border: 3px solid #0ADD00;
+    box-shadow: 5px 5px 5px #072c05;
+    
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-family: griffon;
+}
+
+p {
+    font-family: merri;
+}
+
+.cta {
+    height: 60px;
+    display: block;
+    background-color: #636363;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: #212121;
+    font-size: 18px;
+    font-family: griffon;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 2px solid #212121;
+    padding: 15px;
+}
+
+.cta:hover {
+    border: 2px solid #0ADD00;
+    text-decoration: underline;
+    text-decoration-color: #0ADD00;
+}
+
 
 @media screen and (min-width: 620px) {
     main {
@@ -36,3 +94,5 @@ main {
     }
     
 }
+
+
